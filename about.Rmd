@@ -1,18 +1,28 @@
 ---
-title: "Hello!"
+title: "Self Introduction"
 output: 
   html_document:
     toc: true
     toc_float: true
-    theme: spacelab
+    theme: flatly
 ---
+Here I list some of my education backgrounds, skills, hobbies, social and research experience, etc.
 
-### Welcome for visiting this website
-<img src="images/hw4.jpg" style="width:65%">
+### Education Background
 
-**A Brief Introduction**
+**Columbia University** <br>
+Mailman of Public Health <br>
+Master of Science in Biostatistics
 
-* I'm Yuzhe Hu, a current MS Biostatistics student at Columbia University Mailman of Public Health, class of 2023. Click  [here](about.html) to know more about me.
+**University of Birmingham** <br>
+Bachelor’s Degree in Science <br>
+School of Mathematics <br>
+Major: Applied Mathematics with Statistics 
+
+**Jinan University** <br>
+Bachelor’s Degree in Economics <br>
+Major: Economics and Statistics 
+
 
 
 

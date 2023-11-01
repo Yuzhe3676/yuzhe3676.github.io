@@ -4,15 +4,19 @@ output:
   html_document:
     toc: true
     toc_float: true
-    theme: spacelab
+    theme: flatly
 ---
 
-### Welcome for visiting this website
+### Welcome for Visiting 
+
+This is a personal website created for P8105 Data Science Homework4.
+
 <img src="images/hw4.jpg" style="width:65%">
 
-**A Brief Introduction**
+### A Brief Introduction
 
-* I'm Yuzhe Hu, a current MS Biostatistics student at Columbia University Mailman of Public Health, class of 2023. Click  [here](about.html) to know more about me.
+I'm Yuzhe Hu, a current MS Biostatistics student at Columbia University Mailman of Public Health, class of 2023. Click  [here](about.html) to know more about me.
+
 
 
 
