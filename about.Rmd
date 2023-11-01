@@ -4,7 +4,6 @@ output:
   html_document:
     toc: true
     toc_float: true
-    theme: flatly
 ---
 Here I list some of my education backgrounds, skills, hobbies, social and research experience, etc.
 
