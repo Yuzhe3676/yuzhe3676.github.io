@@ -1,0 +1,69 @@
+---
+title: "NOAA Data Visualisation"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(plotly)
+noaa = 
+  read_csv("./data/nynoaadat.csv") |>
+  janitor::clean_names() |> 
+  mutate(date = as.Date(date, format = "%Y-%m-%d")) |> 
+  drop_na(tmax, tmin, prcp, snow)
+```
+
+Column {data-width=600}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+ yearly_snowfall = noaa |>
+  mutate(year = as.numeric(format(as.Date(date, format = "%Y-%m-%d"), "%Y"))) |>
+  group_by(year) |>
+  summarise(total_snowfall = sum(snow, na.rm = TRUE))
+
+p = yearly_snowfall |>
+  ggplot(aes(x = year, y = total_snowfall)) +
+  geom_line(group = 1) + 
+  geom_point() +  
+  labs(title = 'Yearly Snowfall', x = 'Year', y = 'Total Snowfall (mm)') +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+  
+ggplotly(p)
+```
+
+
+Column {data-width=400}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+noaa |>
+  select(tmax, tmin) |>
+  pivot_longer(cols = c(tmax, tmin), names_to = "Temperature_Type", values_to = "Value") |>
+  plot_ly(
+    x = ~Temperature_Type, y = ~Value, color = ~Temperature_Type,
+    type = "box")
+```
+
+### Chart C
+
+```{r}
+noaa  |> 
+  mutate(month = month.abb[as.numeric(format(as.Date(date, format = "%Y-%m-%d"), "%m"))])   |>
+  group_by(month)  |> 
+  summarise(average_precipitation = mean(prcp, na.rm = TRUE))  |> 
+  ungroup() |>   
+  plot_ly(
+    x = ~ month, y = ~average_precipitation, color = ~ month,
+    type = "bar", colors = "viridis")
+```
+
