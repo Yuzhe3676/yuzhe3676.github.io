@@ -5,7 +5,7 @@ output:
     toc: true
     toc_float: true
 ---
-Here I list some of my education backgrounds, skills, hobbies, social and research experience, etc.
+Here I list some of my education backgrounds, research experience, skills, etc.
 
 ### Education Background
 
@@ -22,10 +22,27 @@ Major: Applied Mathematics with Statistics
 Bachelor’s Degree in Economics <br>
 Major: Economics and Statistics 
 
+### Research Experience
 
+**Study on Effectiveness of Environmental Protection Policies in Reducing Environmental Pollution Caused by Economic Development**
 
+* Constructed a two-phase panel dataset with data of 55 prefectures in 5 provinces in 2015 and 2018, and used a first-order differential equation to test if environmental protection policies slow down the environmental pollution caused by economic development based on the environmental Kuznets curve.
 
+**Selection of Raw Materials Suppliers for Enterprises** 
 
+* Collected supply data of 402 raw material suppliers for an enterprise in the past 5 years, and used TOPSIS method to figure out the weight for 3 characteristics to estimate the capacity of each supplier.
+*Selected the top 50 suppliers, and further applied multi-objective programming to deduce at least 13 necessary suppliers based on the enterprise’s goal and made detailed transportation plan.
+
+**Study on Changes of Autophagy in Peripheral Blood of Patients with Progressive Cerebral Infarction**
+
+* Collected and sorted data of progressive cerebral infarction (PCI) patients.
+* Analyzed the danger factors of PCI group and NPCI group with Mann-Whitney U test.
+* Used two-sample t-test to compare the mRNA expression amount of Beclin 1, LC3Ⅱand P62 between NPCI group and the control group.
+* Adopted one-factor ANOVA to analyze the mRNA expression amount of Beclin 1, LC3Ⅱand P62 of PCI group, NPCI group and the control group.
+
+### Skills 
+* Technical Skills: R, Python, SPSS, Stata, GPower
+* Languages: English, Chinese
 
 
 

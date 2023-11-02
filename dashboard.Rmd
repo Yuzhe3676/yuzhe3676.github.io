@@ -20,7 +20,7 @@ noaa =
 Column {data-width=600}
 -----------------------------------------------------------------------
 
-### Chart A
+### Line Graph of Changes in Total Annual Snowfall
 
 ```{r}
  yearly_snowfall = noaa |>
@@ -30,8 +30,8 @@ Column {data-width=600}
 
 p = yearly_snowfall |>
   ggplot(aes(x = year, y = total_snowfall)) +
-  geom_line(group = 1) + 
-  geom_point() +  
+  geom_line(group = 1,color = "blue") + 
+  geom_point(color = "blue") +  
   labs(title = 'Yearly Snowfall', x = 'Year', y = 'Total Snowfall (mm)') +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 90, hjust = 1))
@@ -43,7 +43,7 @@ ggplotly(p)
 Column {data-width=400}
 -----------------------------------------------------------------------
 
-### Chart B
+### Box Plot of Daily Maximum and Minimum Temperature
 
 ```{r}
 noaa |>
@@ -54,16 +54,18 @@ noaa |>
     type = "box")
 ```
 
-### Chart C
+### Bar Plot of Monthly Average Precipitation
 
 ```{r}
-noaa  |> 
+prcp = noaa  |> 
   mutate(month = month.abb[as.numeric(format(as.Date(date, format = "%Y-%m-%d"), "%m"))])   |>
   group_by(month)  |> 
-  summarise(average_precipitation = mean(prcp, na.rm = TRUE))  |> 
-  ungroup() |>   
+  summarise(average_precipitation = mean(prcp, na.rm = TRUE)) 
+
+prcp |> 
+  mutate(month = fct_reorder(month, average_precipitation)) |> 
   plot_ly(
-    x = ~ month, y = ~average_precipitation, color = ~ month,
+    x = ~ month, y = ~ average_precipitation, color = ~ month,
     type = "bar", colors = "viridis")
 ```
 
