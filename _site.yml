@@ -5,7 +5,7 @@ navbar:
   right:
     - text: "Self Introduction"
       href: about.html
-    - text: "NOAA Data Visualisation"
+    - text: "Dashboard"
       href: dashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:<yh3676@cumc.columbia.edu>
