@@ -1,5 +1,5 @@
 ---
-title: "Hello!"
+title: "Hello"
 output: 
   html_document:
     toc: true
@@ -7,8 +7,6 @@ output:
 ---
 
 ### Welcome for Visiting! 
-
-This is a personal website created for [P8105](p8105.com) Data Science Homework4.
 
 <img src="images/hw4.jpg" style="width:65%">
 
@@ -19,7 +17,6 @@ I'm Yuzhe Hu, a current MS Biostatistics student at Columbia University Mailman 
 Content:
 
 * Self Introduction. Click [here](about.html) to know more about me.
-* A [dashboard](dashboard.html) showing some visualizations of the data from NOAA National Climatic Data Center.
 * You can also find my email link and relative github repository on the top-right of the page navigation bar.
 
 

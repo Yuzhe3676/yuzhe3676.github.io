@@ -24,25 +24,25 @@ Major: Economics and Statistics
 
 ### Research Experience
 
-**Study on Effectiveness of Environmental Protection Policies in Reducing Environmental Pollution Caused by Economic Development**
+**Modeling Analysis and Prediction of Infection Severity in COVID-19 Patients**
 
-* Constructed a two-phase panel dataset with data of 55 prefectures in 5 provinces in 2015 and 2018, and used a first-order differential equation to test if environmental protection policies slow down the environmental pollution caused by economic development based on the environmental Kuznets curve.
+* Developed a classification model to predict COVID-19 severity using seven algorithms, including logistic regression, GAM, MARS, random forest, and boosting.
+* Boosting was selected as the best model, achieving a test AUC of 0.89 and a misclassification error of 0.145 using a training/test data split and 10-fold cross-validation.
+* Key predictors of severity identified by the boosting model: vaccine status, SBP, age, and BMI.
+
+**Study on Changes of Autophagy in Peripheral Blood of Patients with Progressive Cerebral Infarction**
+
+* Collected and sorted data on progressive cerebral infarction (PCI) patients at the Affiliated Hospital of Henan University of Science and Technology from October 2018 to November 2020.
+* Used the Mann-Whitney U test, two-sample t-test, and ANOVA to analyze the risk factors and mRNA expression levels of Beclin 1, LC3Ⅱ, and P62 in the PCI group, NPCI group, and the control group.
 
 **Selection of Raw Materials Suppliers for Enterprises** 
 
 * Collected supply data of 402 raw material suppliers for an enterprise in the past 5 years, and used TOPSIS method to figure out the weight for 3 characteristics to estimate the capacity of each supplier.
-*Selected the top 50 suppliers, and further applied multi-objective programming to deduce at least 13 necessary suppliers based on the enterprise’s goal and made detailed transportation plan.
 
-**Study on Changes of Autophagy in Peripheral Blood of Patients with Progressive Cerebral Infarction**
-
-* Collected and sorted data of progressive cerebral infarction (PCI) patients.
-* Analyzed the danger factors of PCI group and NPCI group with Mann-Whitney U test.
-* Used two-sample t-test to compare the mRNA expression amount of Beclin 1, LC3Ⅱand P62 between NPCI group and the control group.
-* Adopted one-factor ANOVA to analyze the mRNA expression amount of Beclin 1, LC3Ⅱand P62 of PCI group, NPCI group and the control group.
+* Selected the top 50 suppliers, and further applied multi-objective programming to deduce at least 13 necessary suppliers based on the enterprise’s goal and made detailed transportation plan.
 
 ### Skills 
-* Technical Skills: R, Python, SPSS, Stata, GPower
-* Languages: English, Chinese
-
-
+* Programming Languages: R, Python, SQL, SAS
+* Tools: GitHub, Jupyter Notebook, SPSS, EViews, LaTeX, GPower, Microsoft Office
+* Languages: proficient in English, native in Chinese Mandarin
 
