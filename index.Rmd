@@ -10,14 +10,14 @@ output:
 
 <img src="images/hw4.jpg" style="width:65%">
 
-### A Brief Introduction
 
-I'm Yuzhe Hu, a current MS Biostatistics student at Columbia University Mailman of Public Health, class of 2023. 
+I'm Serena(Yuzhe) Hu, a current second year MS Biostatistics student at Columbia University Mailman of Public Health. 
 
-Content:
+Content of this website:
 
 * Self Introduction. Click [here](about.html) to know more about me.
 * You can also find my email link and relative github repository on the top-right of the page navigation bar.
+* A [dashboard](dashboard.html) showing some visualizations of the data from NOAA National Climatic Data Center.
 
 
 
